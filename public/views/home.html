@@ -30,23 +30,23 @@
 				<div class="left">
 					<div class="box-out">
 						<div class="header">
-							<a href="/question"><img class="main-user" src="{{users[question.userId].imageUrl}}"></a>
+							<img ng-click = "show(question.userId)" class="main-user" src="{{users[question.userId].imageUrl}}">
 							<p>{{users[question.userId].name}}<span>is asking:</span></p>
 							<h4>{{question.question}}</h4>
 						</div>
 						<p class="asked">asked</p>
 						<div class="box-in">
-							<a href="#/questions/{{question.questionId}}" class="user-box more">
-									<p class="number">3</p>
+							<a href="/questions/{{question.questionId}}" class="user-box more">
+									<p class="number">{{question.activities}}</p>
 									<p class="more">more activities</p>
 									<span></span>
 							</a>
 							<div class="users" ng-repeat="comment in question.comments | limitTo: 4">
-								<a href="#/user2" class="user-box" ng-class="{answered: comment.answered == true }">
-									<img src="{{users[comment.userId].imageUrl}}">
+								<div  class="user-box" ng-class="{answered: comment.answered == true }">
+									<img ng-click = "show(comment.userId)" src="{{users[comment.userId].imageUrl}}">
 									<p class="status">{{ comment.answered == true ? 'answered' : 'commented' }}</p>
 									<span></span>
-								</a>
+								</div>
 							</div>
 							<div class="mobile-right">
 									<p>{{question.related}} related discussion</p>
@@ -66,4 +66,11 @@
 		<p class="load">load more questions</p>
 	</div>
 </div>
+
+<div  ng-show= "showDialog"  class="modal-box ">
+	<div user-directive></div>
+</div>
+
+
+
 

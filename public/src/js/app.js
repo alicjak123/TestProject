@@ -1,12 +1,12 @@
 angular.module('sampleApp', [
 		'ngRoute', 
 		'MainCtrl', 
-		'QuestionCtrl',
-    'UserDetailCtrl',
     'questionsServices',
     'usersServices',
     'commentsServices',
-    'ngResource'
+    'userDirectives',
+    'ngResource',
+    'ui.bootstrap'
   ])
 
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
@@ -14,7 +14,7 @@ angular.module('sampleApp', [
 
     .when('/questions/:questionId', {
       templateUrl: 'views/question.html',
-      controller: 'QuestionController'
+      controller: 'MainController'
     })
 
     .when('/questions', {
@@ -22,15 +22,11 @@ angular.module('sampleApp', [
       controller: 'MainController'
     })
 
-    .when('/:userId', {
-      templateUrl: 'views/user-detail.html',
-      controller: 'UserDetailController'
-    })
     .otherwise({
       redirectTo: '/questions'
     });
 
 
-  //$locationProvider.html5Mode(true);
+  $locationProvider.html5Mode(true);
 
   }]);

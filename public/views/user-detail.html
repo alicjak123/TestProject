@@ -1,11 +1,12 @@
 
 <div class="section-modal">
+	<span ng-click = "close()" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 	<div class="container">
 		<div class="header-modal header">
-			<img src="src/images/user5.png">
-			<h4>Dr. Halima</h4>
-			<p><span>Member for</span>5 months</p>
-			<p><span>Last seen</span>Saturday afternoon</p>
+			<img src="{{user.imageUrl}}">
+			<h4>{{user.name}}</h4>
+			<p><span>Member for</span>{{user.memberFrom}} months</p>
+			<p><span>Last seen</span>{{user.lastSeen}}</p>
 			<p>
 				<span>Activity level</span>
 				<span class="glyphicon glyphicon glyphicon-certificate cert"></span>
@@ -19,25 +20,25 @@
 			<div class="box-content">
 				<div class="box box1">
 					<div class="content-box1">
-						<p>49</p>
+						<p>{{user.peers}}</p>
 						<p>peers</p>
 					</div>
 				</div>
 				<div class="box box2">
 					<div class="content-box2">
-						<p>29</p>
+						<p>{{user.discussions}}</p>
 						<p>discussions</p>
 					</div>
 				</div>
 				<div class="box box3">
 					<div class="content-box3">
-						<p>19</p>
+						<p>{{user.findings}}</p>
 						<p>findings</p>
 					</div>
 				</div>
 				<div class="box box4">
 					<div class="content-box4">
-						<p>10</p>
+						<p>{{user.questions}}</p>
 						<p>questions</p>
 					</div>
 				</div>

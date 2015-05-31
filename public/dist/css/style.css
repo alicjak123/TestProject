@@ -71,10 +71,49 @@ label {
 .header img {
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 .in {
   float: right;
   width: 89%;
+}
+.modal-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.modal-box .section-modal {
+  position: relative;
+  width: auto;
+  max-width: 830px;
+  margin: 0 auto;
+  -webkit-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-transition: -webkit-transform 1s ease-out;
+  -moz-transition: -moz-transform 1s ease-out;
+  -o-transition: -o-transform 1s ease-out;
+  transition: transform 1s ease-out;
+}
+.modal-box .section-modal.fadeIn {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal-backdrop {
+  opacity: 0.5;
+}
+.glyphicon-remove {
+  float: right;
+  margin-top: -30px;
+  margin-right: -30px;
+  cursor: pointer;
+  color: #cfd1d3;
 }
 /*********************Main*********************************/
 body {
@@ -243,6 +282,7 @@ body .section .content .question .left .box-out .box-in .user-box {
 body .section .content .question .left .box-out .box-in .user-box img {
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 body .section .content .question .left .box-out .box-in .user-box .number,
 body .section .content .question .left .box-out .box-in .user-box .more {
@@ -401,6 +441,7 @@ body .single-question .content .answer-box .face {
 body .single-question .content .answer-box .face img {
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 body .single-question .content .answer-box p {
   color: #404b51;
