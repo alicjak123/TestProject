@@ -2,7 +2,7 @@ angular.module('sampleApp', [
 		'ngRoute', 
     'ngCookies',
 		'MainCtrl', 
-		'CommentCtrl',
+		'QuestionCtrl',
     'UserDetailCtrl',
     'questionsServices',
     'usersServices'
@@ -11,12 +11,12 @@ angular.module('sampleApp', [
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
 
-    .when('/:questionId', {
+    .when('/questions/:questionId', {
       templateUrl: 'views/question.html',
-      controller: 'CommentController'
+      controller: 'QuestionController'
     })
 
-    .when('/', {
+    .when('/questions', {
       templateUrl: 'views/home.html',
       controller: 'MainController'
     })
