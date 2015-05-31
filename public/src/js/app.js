@@ -11,17 +11,17 @@ angular.module('sampleApp', [
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
 
-    .when('/ss', {
-      templateUrl: 'views/home.html',
+    .when('/:questionId', {
+      templateUrl: 'views/question.html',
       controller: 'CommentController'
     })
 
     .when('/', {
-      templateUrl: 'views/home3.html',
+      templateUrl: 'views/home.html',
       controller: 'MainController'
     })
 
-    .when('/s', {
+    .when('/:userId', {
       templateUrl: 'views/user-detail.html',
       controller: 'UserDetailController'
     });

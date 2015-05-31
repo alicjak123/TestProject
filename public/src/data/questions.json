@@ -4,8 +4,13 @@
 	    "userId" : 1,
 	    "question": "Will insulin make my patient gain weight?",
 	    "activities": 7,
-	    "commented": [1, 2, 3],
-	    "answered": [4],
+	    "comments": [
+	    	{ "commentId": 1, "userId": 1, "answered": false },
+	    	{ "commentId": 2, "userId": 3, "answered": false },
+	    	{ "commentId": 3, "userId": 2, "answered": false },
+	    	{ "commentId": 4, "userId": 4, "answered": true },
+	    	{ "commentId": 5, "userId": 5, "answered": true }
+	    ],
 	    "related": 1,
 	    "peersInvolved": 6,
 	    "conversations": 3
@@ -15,8 +20,12 @@
 	    "userId" : 1,
 	    "question": "Will insulin make my patient gain weight?",
 	    "activities": 7,
-	    "commented": [1, 2, 3],
-	    "answered": [4],
+	    "comments": [
+	    	{ "commentId": 1, "userId": 1, "answered": false },
+	    	{ "commentId": 2, "userId": 3, "answered": true },
+	    	{ "commentId": 3, "userId": 2, "answered": false },
+	    	{ "commentId": 4, "userId": 4, "answered": false }
+	    ],
 	    "related": 1,
 	    "peersInvolved": 6,
 	    "conversations": 3
