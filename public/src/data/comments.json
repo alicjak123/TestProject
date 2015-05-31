@@ -11,7 +11,7 @@
 	    "userId" : 2,
 	    "commentContent" : "Lorem ipsum dolor sit amet  Ut enim ad minim veniam, quis nostrud exercitation ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
 	    "votes": 10,
-	    "commentsId": [2]
+	    "commentsId": [2,3]
     },
     {
 	    "commentId": 2, 
@@ -24,7 +24,7 @@
 	    "commentId": 3, 
 	    "userId" : 3,
 	    "commentContent" : "Lorem ipsum dolor sit amet  Ut enim ad minim veniam, quis nostrud exercitation ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
-	    "votes": -8,
+	    "votes": 8,
 	    "commentsId": [2]
     },
     {

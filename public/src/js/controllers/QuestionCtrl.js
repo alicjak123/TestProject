@@ -6,7 +6,7 @@ angular.module('QuestionCtrl', [])
 
 		var entries = Questions.query(function() {
 			$scope.question = entries[$routeParams.questionId];
-			$scope.answered = $scope.question.comments.filter(function(value){ return value.answered === true; }).length;
+			$scope.answeredUser = $scope.question.comments.filter(function(value){ return value.answered === true; }).length;
 		});
 		$scope.users  = Users.query();
 		$scope.comments = Comments.query();

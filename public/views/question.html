@@ -35,53 +35,49 @@
 				</div>
 			</div>
 		</div>
-		<p class="comments">{{answered}} peers already answered Eva</p>
-		<div class="content-block" ng-repeat=" comment in question.comments | filter:answered">
+		<p class="comments">{{answeredUser}} peers already answered Eva</p>
+		<div class="content-block" ng-repeat=" answer in question.comments | filter: {answered:true} ">
 			<div class="answer-box">
 				<div class="face">
-					<img src="{{users[comment.userId].imageUrl}}">
+					<img src="{{users[answer.userId].imageUrl}}">
 				</div>
 				<div class="content-box">
 					<div class="col-xs-9">
 						<div class="header">
-								<p>{{users[comment.userId].name}} <span>commented it:</span><span>yesterday</span></p>
+								<p>{{users[answer.userId].name}} <span>commented it:</span><span>yesterday</span></p>
 						</div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-						</p>
+						<p>{{comments[answer.commentId].commentContent}}</p>
 					</div>
 					<div class="col-xs-3 votes">
-						<p>19 upvotes</p>
+						<p>{{comments[answer.commentId].votes}} upvotes</p>
 						<div class="vote">
 							<a class="up" href="#"><span class="glyphicon glyphicon-triangle-top" ></span></a>
 							<a class="down" href="#"><span class="glyphicon glyphicon-triangle-bottom" ></span></a>
 						</div>
 					</div>
 				</div>
-				<a ng-hide="comments[comment.commentId].commentsId.length" class="btn btn-default question-button" type="button">COMMENT</a>
+				<a ng-hide="comments[answer.commentId].commentsId.length" class="btn btn-default question-button" type="button">COMMENT</a>
 			</div>
-			<div class="answer-box discussion" ng-hide="!comments[comment.commentId].commentsId.length">
+			<div class="answer-box discussion" ng-hide="!comments[answer.commentId].commentsId.length" ng-repeat = " commentId in comments[answer.commentId].commentsId">
 				<div class="face">
-					<img src="src/images/user4.png">
+					<img src="{{users[comments[commentId].userId].imageUrl}}">
 				</div>
 				<div class="content-box">
 					<div class="col-xs-9">
 						<div class="header">
-								<p>John <span>commented it:</span><span>yesterday</span></p>
+								<p>{{users[commentId.userId].name}} <span>commented it:</span><span>yesterday</span></p>
 						</div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-						</p>
+						<p>{{comments[commentId].commentContent}}</p>
 					</div>
 					<div class="col-xs-3 votes">
-						<p>19 upvotes</p>
+						<p>{{comments[commentId].votes}} upvotes</p>
 						<div class="vote">
 							<a class="up" href="#"><span class="glyphicon glyphicon-triangle-top" ></span></a>
 							<a class="down" href="#"><span class="glyphicon glyphicon-triangle-bottom" ></span></a>
 						</div>
 					</div>
 				</div>
-				<a class="btn btn-default question-button" type="button">CONTINUE discussion</a>
+				<a  ng-hide="!comments[answer.commentId].commentsId.length || comments[answer.commentId].commentsId.length != $index+1 " class="btn btn-default question-button" type="button">CONTINUE discussion</a>
 			</div>
 	</div>
 	</div>
