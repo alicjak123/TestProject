@@ -1,0 +1,76 @@
+<nav class="navbar">
+    <div id="navbar">
+    	<div class="container">
+	      <a class="logo" href="/"><img src="src/images/logo.png"></a>
+	    	<ul class="nav navbar-nav navbar-right second">
+	      	<li>Sort by:</li>
+					<li><span class="checked">recent</span></li>
+					<li>or</li>
+					<li><span>hot</span></li>
+	      </ul>
+	      <div class="first">
+					<input id="shelf" type="radio" name="choose" value="shelf"> 
+					<label for="shelf">My shelf</label>
+					<input id="all" type="radio" name="choose" value="all"> 
+					<label for="all">All questions</label>
+	      </div>
+	      <div class="input-group">
+			      <input type="text" class="form-control" placeholder="Search questions">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button">Search</button>
+			      </span>
+			  </div>
+    	</div>
+    </div>
+</nav>
+<div class="section">
+	<div class="container">
+		<div class="content">
+			<div class="question" ng-repeat="question in questions">
+				<div class="left">
+					<div class="box-out">
+						<div class="header">
+							<a href="/question"><img class="main-user" src="{{users[question.questionId].imageUrl}}"></a>
+							<p>{{users[question.questionId].name}}<span>is asking:</span></p>
+							<h4>{{question.question}}</h4>
+						</div>
+						<p class="asked">asked</p>
+						<div class="box-in">
+							<a href="#" class="user-box more">
+									<p class="number">3</p>
+									<p class="more">more activities</p>
+									<span></span>
+							</a>
+							<div class="users" ng-repeat="userId in question.commented">
+								<a href="#/user2" class="user-box">
+									<img src="{{users[userId].imageUrl}}">
+									<p class="status">commented</p>
+									<span></span>
+								</a>
+							</div>
+							<div class="answeredUsers" ng-repeat="userId in question.answered">
+								<a href="#/user6" class="user-box answered">
+									<img src="{{users[userId].imageUrl}}">
+									<p class="status">answered</p>
+									<span></span>
+								</a>
+							</div>
+							<div class="mobile-right">
+									<p>{{question.related}} related discussion</p>
+									<p>{{question.peersInvolved}} peers involved</p>
+									<p>{{question.conversations}} conversations</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+						<p>{{question.related}} related discussion</p>
+						<p>{{question.peersInvolved}} peers involved</p>
+						<p>{{question.conversations}} conversations</p>
+				</div>
+			</div>
+		</div>
+		<p class="load">load more questions</p>
+	</div>
+</div>
+

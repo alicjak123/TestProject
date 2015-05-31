@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1, 
+        "name": "Eva", 
+        "imageUrl": "src/images/user1.png", 
+        "memberFrom": "5 months",
+		"lastSeen": "Saturday afternoon",
+		"peers": 40,
+		"discussions": 20,
+		"findings": 19,
+		"questions": 10,
+		"level": 2
+    },
+	{
+        "id": 2, 
+        "name": "Dr. Halima", 
+        "imageUrl": "src/images/user2.png", 
+        "memberFrom": "8 months",
+		"lastSeen": "Sunday afternoon",
+		"peers": 46,
+		"discussions": 29,
+		"findings": 19,
+		"questions": 10,
+		"level": 2
+    },
+	{
+        "id": 3, 
+        "name": "Andrew", 
+        "imageUrl": "src/images/user3.png", 
+        "memberFrom": "3 months",
+		"lastSeen": "Monday morning",
+		"peers": 26,
+		"discussions": 19,
+		"findings": 11,
+		"questions": 3,
+		"level": 1
+    },
+	{
+        "id": 4, 
+        "name": "Joseph", 
+        "imageUrl": "src/images/user4.png", 
+        "memberFrom": "10 months",
+		"lastSeen": "Monday morning",
+		"peers": 46,
+		"discussions": 29,
+		"findings": 21,
+		"questions": 13,
+		"level": 3
+    },
+	{
+        "id": 5, 
+        "name": "Sabrina", 
+        "imageUrl": "src/images/user5.png", 
+        "memberFrom": "8 months",
+		"lastSeen": "Friday afternoon",
+		"peers": 36,
+		"discussions": 20,
+		"findings": 11,
+		"questions": 9,
+		"level": 2
+    },
+	{
+        "id": 6, 
+        "name": "Michael", 
+        "imageUrl": "src/images/user6.png", 
+        "memberFrom": "7 months",
+		"lastSeen": "Friday morning",
+		"peers": 36,
+		"discussions": 20,
+		"findings": 11,
+		"questions": 9,
+		"level": 3
+    }
+]
