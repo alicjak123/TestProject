@@ -1,9 +1,12 @@
 angular.module('usersServices', [])
 
-  .factory('Users', function($http) {
-      return {
-          get : function() {
-              return $http.get('src/data/users.json');
-          }
-      };
-  });
+
+  .factory('Users', ['$resource', function($resource) {
+
+		return $resource('src/data/users.json', {}, {
+
+      query: { method:'GET', isArray:true }
+
+    });
+
+  }]);

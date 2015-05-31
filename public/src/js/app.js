@@ -1,11 +1,12 @@
 angular.module('sampleApp', [
 		'ngRoute', 
-    'ngCookies',
 		'MainCtrl', 
 		'QuestionCtrl',
     'UserDetailCtrl',
     'questionsServices',
-    'usersServices'
+    'usersServices',
+    'commentsServices',
+    'ngResource'
   ])
 
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
@@ -24,9 +25,12 @@ angular.module('sampleApp', [
     .when('/:userId', {
       templateUrl: 'views/user-detail.html',
       controller: 'UserDetailController'
+    })
+    .otherwise({
+      redirectTo: '/questions'
     });
 
 
-  $locationProvider.html5Mode(true);
+  //$locationProvider.html5Mode(true);
 
   }]);

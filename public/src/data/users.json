@@ -1,8 +1,8 @@
 [
     {
-        "id": 1, 
+        "id": 0, 
         "name": "Eva", 
-        "imageUrl": "src/images/user1.png", 
+        "imageUrl": "src/images/user0.png", 
         "memberFrom": "5 months",
 		"lastSeen": "Saturday afternoon",
 		"peers": 40,
@@ -12,9 +12,9 @@
 		"level": 2
     },
 	{
-        "id": 2, 
+        "id": 1, 
         "name": "Dr. Halima", 
-        "imageUrl": "src/images/user2.png", 
+        "imageUrl": "src/images/user1.png", 
         "memberFrom": "8 months",
 		"lastSeen": "Sunday afternoon",
 		"peers": 46,
@@ -24,9 +24,9 @@
 		"level": 2
     },
 	{
-        "id": 3, 
+        "id": 2, 
         "name": "Andrew", 
-        "imageUrl": "src/images/user3.png", 
+        "imageUrl": "src/images/user2.png", 
         "memberFrom": "3 months",
 		"lastSeen": "Monday morning",
 		"peers": 26,
@@ -36,9 +36,9 @@
 		"level": 1
     },
 	{
-        "id": 4, 
+        "id": 3, 
         "name": "Joseph", 
-        "imageUrl": "src/images/user4.png", 
+        "imageUrl": "src/images/user3.png", 
         "memberFrom": "10 months",
 		"lastSeen": "Monday morning",
 		"peers": 46,
@@ -48,9 +48,9 @@
 		"level": 3
     },
 	{
-        "id": 5, 
+        "id": 4, 
         "name": "Sabrina", 
-        "imageUrl": "src/images/user5.png", 
+        "imageUrl": "src/images/user4.png", 
         "memberFrom": "8 months",
 		"lastSeen": "Friday afternoon",
 		"peers": 36,
@@ -60,9 +60,9 @@
 		"level": 2
     },
 	{
-        "id": 6, 
+        "id": 5, 
         "name": "Michael", 
-        "imageUrl": "src/images/user6.png", 
+        "imageUrl": "src/images/user5.png", 
         "memberFrom": "7 months",
 		"lastSeen": "Friday morning",
 		"peers": 36,

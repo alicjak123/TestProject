@@ -1,33 +1,37 @@
 [
     {
-	    "questionId": 1, 
+	    "questionId": 0, 
 	    "userId" : 1,
 	    "question": "Will insulin make my patient gain weight?",
+	    "questionContent" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
 	    "activities": 7,
 	    "comments": [
-	    	{ "commentId": 1, "userId": 1, "answered": false },
-	    	{ "commentId": 2, "userId": 3, "answered": false },
-	    	{ "commentId": 3, "userId": 2, "answered": false },
-	    	{ "commentId": 4, "userId": 4, "answered": true },
-	    	{ "commentId": 5, "userId": 5, "answered": true }
+	    	{ "commentId": 0, "userId": 0, "answered": false },
+	    	{ "commentId": 1, "userId": 2, "answered": false },
+	    	{ "commentId": 2, "userId": 1, "answered": false },
+	    	{ "commentId": 3, "userId": 3, "answered": true },
+	    	{ "commentId": 4, "userId": 4, "answered": true }
 	    ],
 	    "related": 1,
 	    "peersInvolved": 6,
-	    "conversations": 3
+	    "conversations": 3,
+	    "votes": 7
     },
     {
-	    "questionId": 2, 
-	    "userId" : 1,
+	    "questionId": 1, 
+	    "userId" : 2,
 	    "question": "Will insulin make my patient gain weight?",
+	    "questionContent" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
 	    "activities": 7,
 	    "comments": [
-	    	{ "commentId": 1, "userId": 1, "answered": false },
-	    	{ "commentId": 2, "userId": 3, "answered": true },
-	    	{ "commentId": 3, "userId": 2, "answered": false },
-	    	{ "commentId": 4, "userId": 4, "answered": false }
+	    	{ "commentId": 0, "userId": 0, "answered": false },
+	    	{ "commentId": 1, "userId": 2, "answered": true },
+	    	{ "commentId": 2, "userId": 1, "answered": false },
+	    	{ "commentId": 3, "userId": 3, "answered": false }
 	    ],
 	    "related": 1,
 	    "peersInvolved": 6,
-	    "conversations": 3
+	    "conversations": 3,
+	    "votes": 10
     }
 ]
