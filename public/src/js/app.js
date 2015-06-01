@@ -5,6 +5,7 @@ angular.module('sampleApp', [
     'usersServices',
     'commentsServices',
     'userDirectives',
+    'votesFilter',
     'ngResource',
     'ui.bootstrap'
   ])

@@ -4,9 +4,9 @@
 	      <a class="logo" href="/"><img src="src/images/logo.png"></a>
 	    	<ul class="nav navbar-nav navbar-right second">
 	      	<li>Sort by:</li>
-					<li><span class="checked">recent</span></li>
+					<li><span ng-click="sortType = 'questionId'; itemClicked(0)"  ng-class="{ 'checked': 0 == selectedIndex } ">recent</span></li>
 					<li>or</li>
-					<li><span>hot</span></li>
+					<li><span ng-click="sortType = 'questionVotes'; itemClicked(1)" ng-class="{ 'checked': 1 == selectedIndex } ">hot</span></li>
 	      </ul>
 	      <div class="first">
 					<input id="shelf" type="radio" name="choose" value="shelf"> 
@@ -15,9 +15,9 @@
 					<label for="all">All questions</label>
 	      </div>
 	      <div class="input-group">
-			      <input type="text" class="form-control" placeholder="Search questions">
+			      <input type="text" class="form-control" ng-model="searchText" placeholder="Search questions">
 			      <span class="input-group-btn">
-			        <button class="btn btn-default" type="button">Search</button>
+			        <p>Search</p>
 			      </span>
 			  </div>
     	</div>
@@ -26,7 +26,7 @@
 <div class="section">
 	<div class="container">
 		<div class="content">
-			<div class="question" ng-repeat="question in questions">
+			<div class="question" ng-repeat="question in questions  | limitTo: questionLimit | filter:searchText | orderBy:sortType">
 				<div class="left">
 					<div class="box-out">
 						<div class="header">
@@ -63,11 +63,11 @@
 				</div>
 			</div>
 		</div>
-		<p class="load">load more questions</p>
+		<p class="load" ng-click = "loadQuestions()">load more questions</p>
 	</div>
 </div>
 
-<div  ng-show= "showDialog"  class="modal-box ">
+<div  ng-show= "showDialog" class="modal-box ">
 	<div user-directive></div>
 </div>
 

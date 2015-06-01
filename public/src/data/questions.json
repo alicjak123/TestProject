@@ -15,7 +15,7 @@
 	    "related": 1,
 	    "peersInvolved": 6,
 	    "conversations": 3,
-	    "votes": 7
+	    "questionVotes": 7
     },
     {
 	    "questionId": 1, 
@@ -31,7 +31,74 @@
 	    ],
 	    "related": 1,
 	    "peersInvolved": 6,
+	    "conversations": 5,
+	    "questionVotes": 15
+    },
+     {
+	    "questionId": 3, 
+	    "userId" : 3,
+	    "question": "Will test make my patient gain weight?",
+	    "questionContent" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+	    "activities": 5,
+	    "comments": [
+	    	{ "commentId": 0, "userId": 0, "answered": false },
+	    	{ "commentId": 1, "userId": 2, "answered": true },
+	    	{ "commentId": 2, "userId": 1, "answered": false }
+	    ],
+	    "related": 1,
+	    "peersInvolved": 6,
+	    "conversations": 2,
+	    "questionVotes": 10
+    },
+    {
+	    "questionId": 4, 
+	    "userId" : 4,
+	    "question": "Will insulin make my patient gain weight?",
+	    "questionContent" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+	    "activities": 3,
+	    "comments": [
+	    	{ "commentId": 0, "userId": 0, "answered": false },
+	    	{ "commentId": 1, "userId": 2, "answered": false },
+	    	{ "commentId": 2, "userId": 1, "answered": false },
+	    	{ "commentId": 3, "userId": 3, "answered": true },
+	    	{ "commentId": 4, "userId": 4, "answered": true }
+	    ],
+	    "related": 1,
+	    "peersInvolved": 4,
 	    "conversations": 3,
-	    "votes": 10
+	    "questionVotes": 7
+    },
+    {
+	    "questionId": 5, 
+	    "userId" : 2,
+	    "question": "Will test make my patient gain weight?",
+	    "questionContent" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+	    "activities": 3,
+	    "comments": [
+	    	{ "commentId": 0, "userId": 0, "answered": false },
+	    	{ "commentId": 1, "userId": 2, "answered": true },
+	    	{ "commentId": 2, "userId": 1, "answered": false },
+	    	{ "commentId": 3, "userId": 3, "answered": false }
+	    ],
+	    "related": 1,
+	    "peersInvolved": 8,
+	    "conversations": 6,
+	    "questionVotes": 8
+    },
+     {
+	    "questionId": 6, 
+	    "userId" : 3,
+	    "question": "Will insulin make my patient gain weight?",
+	    "questionContent" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+	    "activities": 5,
+	    "comments": [
+	    	{ "commentId": 0, "userId": 0, "answered": false },
+	    	{ "commentId": 1, "userId": 2, "answered": true },
+	    	{ "commentId": 2, "userId": 1, "answered": false }
+	    ],
+	    "related": 1,
+	    "peersInvolved": 6,
+	    "conversations": 4,
+	    "questionVotes": 15
     }
 ]

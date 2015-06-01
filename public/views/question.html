@@ -24,7 +24,7 @@
 								<p>{{question.questionContent}}</p>
 							</div>
 							<div class="col-xs-3 votes">
-								<p>{{quesiton.votes}} upvotes</p>
+								<p> {{question.questionVotes | votesFilter }}</p>
 								<div class="vote">
 									<a class="up" href="#"><span class="glyphicon glyphicon-triangle-top" ></span></a>
 									<a class="down" href="#"><span class="glyphicon glyphicon-triangle-bottom" ></span></a>
@@ -49,7 +49,7 @@
 						<p>{{comments[answer.commentId].commentContent}}</p>
 					</div>
 					<div class="col-xs-3 votes">
-						<p>{{comments[answer.commentId].votes}} upvotes</p>
+						<p> {{ comments[answer.commentId].votes | votesFilter }} </p>
 						<div class="vote">
 							<a class="up" href="#"><span class="glyphicon glyphicon-triangle-top" ></span></a>
 							<a class="down" href="#"><span class="glyphicon glyphicon-triangle-bottom" ></span></a>
@@ -70,7 +70,7 @@
 						<p>{{comments[commentId].commentContent}}</p>
 					</div>
 					<div class="col-xs-3 votes">
-						<p>{{comments[commentId].votes}} upvotes</p>
+						<p> {{ comments[commentId].votes | votesFilter }}</p>
 						<div class="vote">
 							<a class="up" href="#"><span class="glyphicon glyphicon-triangle-top" ></span></a>
 							<a class="down" href="#"><span class="glyphicon glyphicon-triangle-bottom" ></span></a>

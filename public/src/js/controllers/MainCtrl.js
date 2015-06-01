@@ -5,9 +5,20 @@ angular.module('MainCtrl', [])
 	function($scope, $routeParams, Questions, Users, Comments) {
 
 		$scope.showDialog = false;
+		$scope.questionLimit = 4;
 		$scope.questions = Questions.query();
     $scope.users  = Users.query();
     $scope.comments = Comments.query();
+    $scope.sortType     = 'questionId';
+
+		$scope.selectedIndex = 0;
+		$scope.itemClicked = function ($index) {
+			$scope.selectedIndex = $index;
+		};
+
+		$scope.loadQuestions = function() {
+			$scope.questionLimit +=1;
+		};
 
 		var entries = Questions.query(function() {
 			$scope.question = entries[$routeParams.questionId];
