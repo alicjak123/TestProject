@@ -474,7 +474,7 @@ body .section-modal {
   background-color: #fff;
 }
 body .section-modal .container {
-  max-width: 700px;
+  max-width: 730px;
 }
 body .section-modal .header-modal {
   border-bottom: 1px solid #a7a9ac;
@@ -491,7 +491,7 @@ body .section-modal .header-modal h4 {
 }
 body .section-modal .header-modal p {
   float: left;
-  margin-right: 35px;
+  margin-right: 25px;
   font-size: 14px;
   font-weight: 400;
   color: #000;
@@ -505,12 +505,14 @@ body .section-modal .header-modal span {
   color: #898ba1;
 }
 body .section-modal .header-modal .cert {
-  color: #fa8b81;
+  color: #cfd1d3;
   font-size: 20px;
   margin-right: 2px;
+  margin-left: 5px;
+  margin-top: -5px;
 }
-body .section-modal .header-modal .cert:last-child {
-  color: #cfd1d3;
+body .section-modal .header-modal .cert-color {
+  color: #fa8b81;
 }
 body .section-modal .content-modal h2 {
   display: inline-block;
@@ -529,6 +531,29 @@ body .section-modal .content-modal .box-content {
 body .section-modal .content-modal .box-content p {
   color: #000;
   text-transform: lowercase;
+}
+body .section-modal .content-modal .friends-box {
+  margin-top: 20px;
+}
+body .section-modal .content-modal .friends-box .friend {
+  display: inline-block;
+  padding: 10px;
+  width: 90px;
+  height: 90px;
+  margin-left: 13px;
+  background: repeating-linear-gradient(45deg, #dfdfdf, #dfdfdf 1px, #ffffff 1px, #ffffff 4px);
+}
+body .section-modal .content-modal .friends-box .friend img {
+  width: 50px;
+  height: 50px;
+}
+body .section-modal .content-modal .friends-box .friend p {
+  color: #0266b3;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+body .section-modal .content-modal .friends-box .friend:first-child {
+  margin-left: 0;
 }
 /******************************************TRANSFORM*********************************************/
 .box-content .box {
@@ -621,6 +646,10 @@ body .section-modal .content-modal .box-content p {
     text-align: center;
     margin-bottom: 20px;
   }
+  body .single-question .logo {
+    margin-left: 10%;
+    width: auto;
+  }
   body .navbar .first {
     float: left;
   }
@@ -632,6 +661,13 @@ body .section-modal .content-modal .box-content p {
   }
   body .users .user-box:nth-child(4n) {
     display: none;
+  }
+  body .section .content .question .right {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  body .back {
+    margin-left: 0;
   }
 }
 @media (max-width: 768px) {
@@ -663,10 +699,49 @@ body .section-modal .content-modal .box-content p {
   body .section .content .question .left .box-out .box-in {
     width: 100%;
   }
+  body .navbar.single-question .logo {
+    margin-left: 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  body .navbar.single-question .lastDiscuss {
+    float: none;
+    text-align: center;
+  }
+  body .single-question .content .answer-box .face {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  body .single-question .content .answer-box .content-box {
+    width: 100%;
+    border-left: 0;
+  }
+  body .single-question .content .discussion {
+    width: 100%;
+    border-left: 8px solid #d8d8d8;
+  }
+  body .section-modal {
+    padding: 0;
+  }
+  body .section-modal .content-modal h2 {
+    font-size: 26px;
+  }
 }
 @media (max-width: 496px) {
+  body .navbar .second {
+    float: left;
+    margin-left: 0;
+  }
+  body .navbar .input-group .input-group-btn p {
+    padding: 10px 20px;
+  }
   body .section .content .question .left .users .user-box:nth-child(2n),
   body .section .content .question .left .users .user-box:nth-child(3n) {
     display: none;
+  }
+  body .section .content .question .mobile-right p {
+    font-size: 13px;
   }
 }

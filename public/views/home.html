@@ -41,8 +41,8 @@
 									<p class="more">more activities</p>
 									<span></span>
 							</a>
-							<div class="users" ng-repeat="comment in question.comments | limitTo: 4">
-								<div  class="user-box" ng-class="{answered: comment.answered == true }">
+							<div class="users">
+								<div  class="user-box" ng-repeat="comment in question.comments | limitTo: boxLimit" ng-class="{answered: comment.answered == true }" >
 									<img ng-click = "show(comment.userId)" src="{{users[comment.userId].imageUrl}}">
 									<p class="status">{{ comment.answered == true ? 'answered' : 'commented' }}</p>
 									<span></span>

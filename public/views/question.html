@@ -3,7 +3,7 @@
     	<div class="container">
     		<a class="back" href="/"><span class="glyphicon glyphicon-circle-arrow-left" ></span></a>
 	      <a class="logo" href="/"><img src="src/images/logo.png"></a>
-	      <p>Last time discussed <span>1</span>day ago</p>
+	      <p class="lastDiscuss">Last time discussed <span>1</span>day ago</p>
     	</div>
     </div>
 </nav>
@@ -20,14 +20,14 @@
 							<h4>{{question.question}}</h4>
 						</div>
 						<div class="box-in">
-							<div class="col-xs-9">
+							<div class="col-xs-8 col-sm-9">
 								<p>{{question.questionContent}}</p>
 							</div>
-							<div class="col-xs-3 votes">
+							<div class="col-xs-4 col-sm-3 votes">
 								<p> {{question.questionVotes | votesFilter }}</p>
 								<div class="vote">
-									<a class="up" href="#"><span class="glyphicon glyphicon-triangle-top" ></span></a>
-									<a class="down" href="#"><span class="glyphicon glyphicon-triangle-bottom" ></span></a>
+									<a ng-click = "up(question) " class="up" href="#"><span class="glyphicon glyphicon-triangle-top" ></span></a>
+									<a ng-click = "down(question)" class="down" href="#"><span class="glyphicon glyphicon-triangle-bottom" ></span></a>
 								</div>
 							</div>
 					</div>
@@ -42,13 +42,13 @@
 					<img ng-click = "show(answer.userId)" src="{{users[answer.userId].imageUrl}}">
 				</div>
 				<div class="content-box">
-					<div class="col-xs-9">
+					<div class="col-xs-8 col-sm-9">
 						<div class="header">
 								<p>{{users[answer.userId].name}} <span>commented it:</span><span>yesterday</span></p>
 						</div>
 						<p>{{comments[answer.commentId].commentContent}}</p>
 					</div>
-					<div class="col-xs-3 votes">
+					<div class="col-xs-4 col-sm-3 votes">
 						<p> {{ comments[answer.commentId].votes | votesFilter }} </p>
 						<div class="vote">
 							<a class="up" href="#"><span class="glyphicon glyphicon-triangle-top" ></span></a>
@@ -63,13 +63,13 @@
 					<img ng-click = "show(comments[commentId].userId)" src="{{users[comments[commentId].userId].imageUrl}}">
 				</div>
 				<div class="content-box">
-					<div class="col-xs-9">
+					<div class="col-xs-8 col-sm-9">
 						<div class="header">
 								<p>{{users[commentId.userId].name}} <span>commented it:</span><span>yesterday</span></p>
 						</div>
 						<p>{{comments[commentId].commentContent}}</p>
 					</div>
-					<div class="col-xs-3 votes">
+					<div class="col-xs-4 col-sm-3 votes">
 						<p> {{ comments[commentId].votes | votesFilter }}</p>
 						<div class="vote">
 							<a class="up" href="#"><span class="glyphicon glyphicon-triangle-top" ></span></a>

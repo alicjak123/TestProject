@@ -9,9 +9,9 @@
 			<p><span>Last seen</span>{{user.lastSeen}}</p>
 			<p>
 				<span>Activity level</span>
-				<span class="glyphicon glyphicon glyphicon-certificate cert"></span>
-				<span class="glyphicon glyphicon glyphicon-certificate cert"></span>
-				<span class="glyphicon glyphicon glyphicon-certificate cert"></span>
+				<span ng-class="{ 'cert-color': user.level >= 1 } " class="glyphicon glyphicon glyphicon-certificate cert"></span>
+				<span ng-class="{ 'cert-color': user.level >= 2 } " class="glyphicon glyphicon glyphicon-certificate cert"></span>
+				<span ng-class="{ 'cert-color': user.level == 3 } " class="glyphicon glyphicon glyphicon-certificate cert"></span>
 			</p>
 		</div>
 		<div class="content-modal">
@@ -44,6 +44,12 @@
 				</div>
 			</div>
 			<p>Who joined the pletform that same period</p>
+			<div class="friends-box">
+				<div class="friend" ng-repeat="friend in user.whoJoinedWith">
+					<img src="{{users[friend].imageUrl}}">
+					<p>{{users[friend].name}}</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

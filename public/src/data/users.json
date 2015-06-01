@@ -9,7 +9,8 @@
 		"discussions": 20,
 		"findings": 19,
 		"questions": 10,
-		"level": 2
+		"level": 2,
+		"whoJoinedWith": [1,2,3]
     },
 	{
         "id": 1, 
@@ -21,7 +22,8 @@
 		"discussions": 29,
 		"findings": 19,
 		"questions": 10,
-		"level": 2
+		"level": 2,
+		"whoJoinedWith": [4,5]
     },
 	{
         "id": 2, 
@@ -33,7 +35,8 @@
 		"discussions": 19,
 		"findings": 11,
 		"questions": 3,
-		"level": 1
+		"level": 1,
+		"whoJoinedWith": [5]
     },
 	{
         "id": 3, 
@@ -45,7 +48,8 @@
 		"discussions": 29,
 		"findings": 21,
 		"questions": 13,
-		"level": 3
+		"level": 3,
+		"whoJoinedWith": [4,5,2]
     },
 	{
         "id": 4, 
@@ -57,7 +61,8 @@
 		"discussions": 20,
 		"findings": 11,
 		"questions": 9,
-		"level": 2
+		"level": 2,
+		"whoJoinedWith": [4,5,1]
     },
 	{
         "id": 5, 
@@ -69,6 +74,7 @@
 		"discussions": 20,
 		"findings": 11,
 		"questions": 9,
-		"level": 3
+		"level": 3,
+		"whoJoinedWith": [4,5,1]
     }
 ]

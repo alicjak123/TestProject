@@ -6,8 +6,7 @@ angular.module('sampleApp', [
     'commentsServices',
     'userDirectives',
     'votesFilter',
-    'ngResource',
-    'ui.bootstrap'
+    'ngResource'
   ])
 
   .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
