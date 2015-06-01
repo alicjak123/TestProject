@@ -33,10 +33,12 @@ angular.module('MainCtrl', [])
 			$scope.questionLimit +=1;
 		};
 
-		var entries = Questions.query(function() {
-			$scope.question = entries[$routeParams.questionId];
-			$scope.answeredUser = $scope.question.comments.filter(function(value){ return value.answered === true; }).length;
-		});
+		if(typeof $routeParams.questionId !== "undefined") {
+			var entries = Questions.query(function() {
+				$scope.question = entries[$routeParams.questionId];
+				$scope.answeredUser = $scope.question.comments.filter(function(value){ return value.answered === true; }).length;
+			});
+		}
 
 		$scope.show = function(userId) {
 			var entries = Users.query(function() {
